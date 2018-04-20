@@ -93,14 +93,14 @@ var promise = new Promise(function (resolve) {
 
         })
         .then(function (data) {
-            resolve(function () {
 
 
+            resolve(data); //to my decydujemy kiedy rozwiaze sie promisa, kiedy bedzie resolved
 
-
-            })
 
         })
 
 
 })
+
+promise.then(console.log)
