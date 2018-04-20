@@ -1,3 +1,5 @@
+/*
+
 (function () {
     fetch('https://randomuser.me/api/?results=10')
         .then(function (response) {
@@ -53,6 +55,8 @@
 })();
 
 
+*/
+
 /*
 function render(users) {
 
@@ -78,3 +82,25 @@ function render(users) {
 
 
 */
+
+var promise = new Promise(function (resolve) {
+
+    fetch('https://randomuser.me/api/')
+
+        .then(function (response) {
+
+            return response.json()
+
+        })
+        .then(function (data) {
+            resolve(function () {
+
+
+
+
+            })
+
+        })
+
+
+})
